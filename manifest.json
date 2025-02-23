@@ -1,17 +1,20 @@
 {
-   "content_scripts": [ {
-      "js": [ "content.js" ],
-      "matches": [ "*://*.youtube.com/*" ],
+  "version": "0.0.1",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "manifest_version": 3,
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["*://*.youtube.com/*"],
       "run_at": "document_end"
-   } ],
-   "description": "Removes the number of notifications in parentheses that YouTube displays on tabs",
-   "icons": {
-      "128": "rytn-icon-128.png",
-      "48": "rytn-icon-48.png"
-   },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhL3YzhoHEy/ZTljh8v44E+ZLM4Z0vuVoNXaa+UszfDfYcnCEG4RoGktXJ7VG1JjQQNd58uB/jqtPemXuRNSypkzEnjR+WAenCqvTY1MSYSprtYfiaVe5GprZMnAH++QmSlHzlUJk3Z0nXrlDVgaY8oKePa+x8iNq3Y9Ah+nBI2HbQE1KrocOYYm4F8NgEZCNjwpp2XuXyqlnrQEjRs48naOvSCTklXoHH3LwNGinivUm1Mn2kRtEzB/bgRYnHHxNXFgIrAxftZSnni3tU6YB92UFB4FNfaFtuCEXG7xFfTSFYrYPAHcdSDoAq+yhkzlYleDHWVK83dBXGq9TXk7X2QIDAQAB",
-   "manifest_version": 3,
-   "name": "Remove YouTube™ Tab Number",
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.6"
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
 }
